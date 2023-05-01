@@ -6,7 +6,7 @@ login
 
 home
 
-![home](https://user-images.githubusercontent.com/115555417/235540373-102dd175-5f60-4e4e-9bd0-dbe3a6e72165.jpg)
+![home_UI](https://user-images.githubusercontent.com/115555417/235545511-cdc2c687-3d6b-4422-b3cd-27da6a980ba6.jpg)
 
 
 product detail
