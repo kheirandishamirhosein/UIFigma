@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">UI</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="welcome_back">Welcome back</string>
+    <string name="username">Username</string>
+    <string name="sneakers">Nike Triple Black Air Force 1 \'07\nsneakers</string>
+    <string name="lorem">A Lorem Ipsum text generator is specifically designed...</string>
+    <string name="sneakers2">Nike Triple Black Air Force 1 \'07sneakers</string>
+    <string name="lorem2">A Lorem Ipsum text generator is specifically designed...</string>
+    <string name="text_product">A Lorem Ipsum text generator is specifically
+        \ndesigned to generate a dummy text or
+        \nplaceholder text.</string>
+    <string name="text_product_2">A Lorem Ipsum text generator is specifically
+        \ndesigned to generate a dummy text or
+        \nplaceholder text.</string>
+    <string name="sneakers_product">Nike Triple Black Air Force 1
+\'07 sneakers</string>
+    <string name="text_200"> A Lorem Ipsum text generator is specifically
+ designed to generate a dummy text or placeholder
+ text.</string>
+    <string name="successful_registered">your product has been successful
+                      registered</string>
+    <string name="placeholder_text"> A Lorem Ipsum text generator is specifically
+        \ndesigned to generate a dummy text or
+ \nplaceholder text.</string>
+    <string name="text_login">A Lorem Ipsum text generator is specifically\n\t\tdesigned to generate a dummy text or
+        \n\t\t\t\t\t\t\t\t\tplaceholder text.</string>
+    <string name="success_loan">Nike Triple Black Air Force 1 \'07 sneakers</string>
+</resources>

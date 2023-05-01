@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingCartAddProductActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/md_cv_above_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/co_layout_above_bar"
+            android:layout_width="match_parent"
+            android:background="@drawable/bag_above_bar"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/md_btn_menu"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#0021CE"
+                app:icon="@drawable/ic_menu"
+                app:iconSize="30dp"
+                app:iconTint="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_shop_icon"
+                android:layout_width="21dp"
+                android:layout_height="23.45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="22dp"
+                android:layout_marginStart="86dp"
+                android:layout_marginEnd="136dp"
+                android:src="@drawable/ic_above_bar_bag"
+                app:layout_constraintBottom_toBottomOf="@id/md_btn_menu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/md_btn_menu" />
+
+            <ImageView
+                android:id="@+id/tv_eco"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_above_bar"
+                android:layout_marginTop="4.79dp"
+                android:layout_marginStart="6dp"
+                app:layout_constraintBottom_toBottomOf="@id/iv_shop_icon"
+                app:layout_constraintStart_toEndOf="@id/iv_shop_icon"
+                app:layout_constraintTop_toTopOf="@id/iv_shop_icon" />
+
+
+            <ImageView
+                android:id="@+id/md_btn_shop_bag"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="305dp"
+                android:src="@drawable/bag"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:text="1"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@drawable/x_ic_circle"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="75dp"
+                app:layout_constraintStart_toStartOf="@id/md_btn_shop_bag"
+                app:layout_constraintTop_toTopOf="@id/md_btn_shop_bag"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/co_layout_tv_dec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/md_cv_above_bar_view">
+
+    <TextView
+        android:id="@+id/tv_dec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#737373"
+        android:textSize="12sp"
+        android:text="@string/text_200"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/md_cv_payments"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/co_layout_tv_dec">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/md_cv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#F9F9F9">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/co_layout_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/md_cv_shopping_cart_product_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:backgroundTint="#E4E4E4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/co_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:id="@+id/tv_product_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginBottom="14dp"
+                            android:text="Add product"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/co_layout_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/md_cv_shopping_cart_product_details">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/md_cv_shopping_cart_product_details_product_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#F9F9F9"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/co_shop"
+                            android:layout_marginBottom="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/md_cv_edit_text_card_num"
+                                android:layout_width="267dp"
+                                android:layout_height="43dp"
+                                android:layout_marginStart="18dp"
+                                android:layout_marginTop="22dp"
+                                android:layout_marginEnd="15dp"
+                                android:backgroundTint="#F9F9F9"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/md_tf_card_num"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Title"
+                                    app:boxStrokeColor="#B7B7B7"
+                                    app:hintTextColor="@color/black">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edit_text_card_num"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/md_cv_edit_text_cvv2"
+                                android:layout_width="266dp"
+                                android:layout_height="62dp"
+                                android:layout_marginStart="18dp"
+                                android:layout_marginTop="29dp"
+                                android:layout_marginEnd="16dp"
+                                android:backgroundTint="#F9F9F9"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/md_cv_edit_text_card_num"
+                                app:layout_constraintEnd_toEndOf="parent">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/md_tf_cvv2"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Description"
+                                    app:boxStrokeColor="#B7B7B7"
+                                    app:hintTextColor="@color/black">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edit_text_cvv2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/md_cv_edit_text_year"
+                                android:layout_width="265dp"
+                                android:layout_height="43dp"
+                                android:layout_marginStart="19dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginEnd="16dp"
+                                android:backgroundTint="#F9F9F9"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/md_cv_edit_text_cvv2">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/md_tf_year"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Category"
+                                    app:boxStrokeColor="#B7B7B7"
+                                    app:hintTextColor="@color/black">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edit_text_year"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/md_cv_edit_text_e_pass"
+                                android:layout_width="265dp"
+                                android:layout_height="43dp"
+                                android:layout_marginStart="19dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginEnd="16dp"
+                                android:backgroundTint="#F9F9F9"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/md_cv_edit_text_year"
+                                app:layout_constraintEnd_toEndOf="parent">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/md_tf_e_pass"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Image URL"
+                                    app:boxStrokeColor="#B7B7B7"
+                                    app:hintTextColor="@color/black">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edit_text_e_pass"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/md_cv_edit_text_e_price"
+                                android:layout_width="265dp"
+                                android:layout_height="43dp"
+                                android:layout_marginStart="19dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginEnd="16dp"
+                                android:backgroundTint="#F9F9F9"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/md_cv_edit_text_e_pass"
+                                app:layout_constraintEnd_toEndOf="parent">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/md_tf_e_price"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Image URL"
+                                    app:boxStrokeColor="#B7B7B7"
+                                    app:hintTextColor="@color/black">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edit_text_e_price"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </com.google.android.material.card.MaterialCardView>
+
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/md_cv_cancel"
+                                android:layout_width="124dp"
+                                android:layout_height="43dp"
+                                android:layout_marginStart="17dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginEnd="15dp"
+                                android:backgroundTint="#F1F6F9"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/md_cv_edit_text_e_price">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/md_btn_proceed_to_cheek_out"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#F1F6F9"
+                                    android:textColor="#FD6644"
+                                    android:text="Cancel"
+                                    android:textSize="14sp"
+                                    android:gravity="center"
+                                    android:outlineSpotShadowColor="#FD6644"
+                                    app:strokeColor="#FD6644"
+                                    app:strokeWidth="2dp"
+                                    android:textAppearance="@style/TextAppearance.AppCompat"/>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/md_cv_cheek_out"
+                                android:layout_width="130dp"
+                                android:layout_height="43dp"
+                                android:layout_marginStart="11dp"
+                                android:layout_marginTop="31dp"
+                                android:layout_marginEnd="16dp"
+                                android:backgroundTint="#F1F6F9"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/md_cv_edit_text_e_price">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/md_btn_cheek_out_loan_success_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#FD6644"
+                                    android:textColor="@color/white"
+                                    android:text="Add Product"
+                                    android:textSize="15sp"
+                                    android:textAppearance="@style/TextAppearance.AppCompat"/>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

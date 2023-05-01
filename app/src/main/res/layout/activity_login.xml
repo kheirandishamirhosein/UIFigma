@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".LoginActivity">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/md_cv_login"
+        android:layout_width="298dp"
+        android:layout_height="656dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="32dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/co_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_shop_icon"
+                android:layout_width="25dp"
+                android:layout_height="27.92dp"
+                android:layout_marginStart="106dp"
+                android:layout_marginTop="80.57dp"
+                android:layout_marginEnd="167dp"
+                android:src="@drawable/bag_login"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/tv_eco"
+                android:layout_width="50dp"
+                android:layout_height="10dp"
+                android:src="@drawable/ic_logo"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/iv_shop_icon"
+                app:layout_constraintStart_toEndOf="@id/iv_shop_icon"
+                app:layout_constraintTop_toTopOf="@id/iv_shop_icon" />
+
+
+            <TextView
+                android:id="@+id/tv_welcome"
+                android:layout_width="102dp"
+                android:layout_height="17dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="106dp"
+                android:layout_marginEnd="90dp"
+                android:text="@string/welcome_back"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/purple"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_shop_icon" />
+
+
+            <TextView
+                android:id="@+id/tv_text3"
+                android:layout_width="274dp"
+                android:layout_height="50dp"
+                android:text="@string/text_login"
+                android:textSize="12sp"
+                android:textAppearance="@style/a_lorem_ips"
+                android:textColor="@color/gray_text"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="9dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_welcome" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/md_cv_edit_text_username"
+                android:layout_width="264dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="66dp"
+                android:layout_marginEnd="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_text3">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/md_tf_username"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/username"
+                    app:hintTextColor="@color/black"
+                    app:boxStrokeColor="@color/edit_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_text_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/md_cv_edit_text_password"
+                android:layout_width="264dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="42.75dp"
+                android:layout_marginEnd="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/md_cv_edit_text_username">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/md_tf_password"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    app:boxStrokeColor="#AEBDCA"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="41.81dp"
+                android:layout_marginTop="174.25dp"
+                android:text="Login"
+                android:layout_marginEnd="18dp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="@id/md_cv_edit_text_password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
