@@ -11,7 +11,7 @@ home
 
 product detail
 
-![product_details](https://user-images.githubusercontent.com/115555417/235540532-aa8edc88-6097-42bd-bbc7-621ef8973b56.jpg)
+![product_detail](https://user-images.githubusercontent.com/115555417/235545966-c106b1f8-a786-4cf9-9463-d92a830c3917.jpg)
 
 
 cash shopping cart
